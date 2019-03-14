@@ -25,4 +25,4 @@ class SushiRestaurantApp extends PolymerElement {
   }
 }
 
-window.customElements.define('SushiRestaurant-app', SushiRestaurantApp);
+window.customElements.define('sushirestaurant-app', SushiRestaurantApp);
