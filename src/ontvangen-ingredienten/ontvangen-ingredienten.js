@@ -15,11 +15,22 @@ class OntvangenIngredienten extends PolymerElement {
         }
 
         #tabel{
-          border
+          border: 1px solid black;
+          border-collapse: collapse;
+        }
+
+        #pH{
+          color: rgb(230,230,230);
+        }
+
+        #pI{
+          allign: center;
         }
 
         #trH{
           background-color: #9E9E9E;
+          border: 2px solid black;
+          border-collapse: collapse;
         }
 
         #trO{
@@ -29,74 +40,144 @@ class OntvangenIngredienten extends PolymerElement {
           background-color: #FFFFFF;
         }
 
+        #th0{
+          width: 12.5em;
+          border: 2px solid black;
+          border-collapse: collapse;
+          height: 2.5em;
+        }
+
+        #th1{
+          width: 20em;
+          border: 2px solid black;
+          border-collapse: collapse;
+        }
+
+        #th2{
+          width: 67.5em;
+        }
+
         #td0{
           width: 10em;
+          border: 2px solid black;
+          border-collapse: collapse;
         }
 
         #td1{
-          width: 25em;
+          width: 15em;
+          border: 2px solid black;
+          border-collapse: collapse;
+
         }
 
         #td2{
-          width: 65em;
+          width: 15em;
+          padding-left: 0.5em;
+          border-bottom: 2px solid black;
+          border-collapse: collapse;
         }
+
+        #td3{
+          width: 15em;
+          border-bottom: 2px solid black;
+          border-collapse: collapse;
+        }
+
+        #td4{
+          width: 12.5em;
+          border-bottom: 2px solid black;
+          border-collapse: collapse;
+        }
+
+        #paper{
+          width: 20em;
+          allign: right;
+        }
+
+        #but{
+          margin-left: 3em;
+          border: 1px solid black;
+          height: 3em;
+          background-color: #9E9E9E;
+        }
+
       </style>
 
       <table id="tabel">
         <tr id="trH">
-          <th id="td0"></th>
-          <th id="td1">Ingrediënt</th>
-          <th id="td2">Hoeveelheid</th>
+          <th id="th0"></th>
+          <th id="th1"><p id="pH">Ingrediënt</p></th>
+          <th colspan="3" id="th2"><p id="pH">Hoeveelheid</p></th>
         </tr>
         <tr id="trO">
           <td id="td0"></td>
-          <td id="td1">[[ingredient.0]]</td>
-          <td id="td2">35<paper-input value="{{aantal-Zalm}}"></paper-input><button id="but1">Toevoegen</td>
+          <td id="td1"><center>[[ingredient.0]]</center></td>
+          <td id="td2">35</td>
+          <td id="td3"><paper-input prevent-invalid-input placeholder="0" id="paper" type="number" value="{{aantal-Zalm}}"></paper-input></td>
+          <td id="td4"><button id="but">Toevoegen</td>
         </tr>
         <tr id="trE">
           <td id="td0"></td>
-          <td id="td1">[[ingredient.1]]</td>
-          <td id="td2">20<paper-input value="{{aantal-Tonijn}}"></paper-input><button id="but1">Toevoegen</td>
+          <td id="td1"><center>[[ingredient.1]]</center></td>
+          <td id="td2">20</td>
+          <td id="td3"><paper-input prevent-invalid-input placeholder="0" id="paper" type="number" value="{{aantal-Tonijn}}"></paper-input></td>
+          <td id="td4"><button id="but">Toevoegen</td>
         </tr>
         <tr id="trO">
           <td id="td0"></td>
-          <td id="td1">[[ingredient.2]]</td>
-          <td id="td2">15<paper-input value="{{aantal-Kip}}"></paper-input><button id="but1">Toevoegen</td>
+          <td id="td1"><center>[[ingredient.2]]</center></td>
+          <td id="td2">15</td>
+          <td id="td3"><paper-input prevent-invalid-input placeholder="0" id="paper" type="number" value="{{aantal-Kip}}"></paper-input></td>
+          <td id="td4"><button id="but">Toevoegen</td>
         </tr>
         <tr id="trE">
           <td id="td0"></td>
-          <td id="td1">[[ingredient.3]]</td>
-          <td id="td2">10<paper-input value="{{aantal-Komkommer}}"></paper-input><button id="but1">Toevoegen</td>
+          <td id="td1"><center>[[ingredient.3]]</center></td>
+          <td id="td2">10</td>
+          <td id="td3"><paper-input prevent-invalid-input placeholder="0" id="paper" type="number" value="{{aantal-Krab}}"></paper-input></td>
+          <td id="td4"><button id="but">Toevoegen</td>
         </tr>
         <tr id="trO">
           <td id="td0"></td>
-          <td id="td1">[[ingredient.4]]</td>
-          <td id="td2">35<paper-input value="{{aantal-Krab}}"></paper-input><button id="but1">Toevoegen</td>
+          <td id="td1"><center>[[ingredient.4]]</center></td>
+          <td id="td2">35</td>
+          <td id="td3"><paper-input prevent-invalid-input placeholder="0" id="paper" type="number" value="{{aantal-KomKommer}}"></paper-input></td>
+          <td id="td4"><button id="but">Toevoegen</td>
         </tr>
         <tr id="trE">
           <td id="td0"></td>
-          <td id="td1">[[ingredient.5]]</td>
-          <td id="td2">24<paper-input value="{{aantal-Wortel}}"></paper-input><button id="but1">Toevoegen</td>
+          <td id="td1"><center>[[ingredient.5]]</center></td>
+          <td id="td2">24</td>
+          <td id="td3"><paper-input prevent-invalid-input placeholder="0" id="paper" type="number" value="{{aantal-Wortel}}"></paper-input></td>
+          <td id="td4"><button id="but">Toevoegen</td>
         </tr>
         <tr id="trO">
           <td id="td0"></td>
-          <td id="td1">[[ingredient.6]]</td>
-          <td id="td2">23<paper-input value="{{aantal-Ui}}"></paper-input><button id="but1">Toevoegen</td>
+          <td id="td1"><center>[[ingredient.6]]</center></td>
+          <td id="td2">23</td>
+          <td id="td3"><paper-input prevent-invalid-input placeholder="0" id="paper" type="number" value="{{aantal-Ui}}"></paper-input></td>
+          <td id="td4"><button id="but">Toevoegen</td>
         </tr>
         <tr id="trE">
           <td id="td0"></td>
-          <td id="td1">[[ingredient.7]]</td>
-          <td id="td2">12<paper-input value="{{aantal-Sla}}"></paper-input><button id="but1">Toevoegen</td>
+          <td id="td1"><center>[[ingredient.7]]</center></td>
+          <td id="td2">12</td>
+          <td id="td3"><paper-input prevent-invalid-input placeholder="0" id="paper" type="number" value="{{aantal-Sla}}"></paper-input></td>
+          <td id="td4"><button id="but">Toevoegen</td>
         </tr>
         <tr id="trO">
           <td id="td0"></td>
-          <td id="td1">[[ingredient.8]]</td>
-          <td id="td2">45<paper-input value="{{aantal-Zeewierbladen}}"></paper-input><button id="but1">Toevoegen</td>
+          <td id="td1"><center>[[ingredient.8]]</center></td>
+          <td id="td2">45</td>
+          <td id="td3"><paper-input prevent-invalid-input placeholder="0" id="paper" type="number" value="{{aantal-Zeewierbladen}}"></paper-input></td>
+          <td id="td4"><button id="but">Toevoegen</td>
         </tr>
         <tr id="trE">
           <td id="td0"></td>
-          <td id="td1">[[ingredient.9]]</td>
-          <td id="td2">21<paper-input value="{{aantal-Tomaat}}"></paper-input><button id="but1">Toevoegen</td>
+          <td id="td1"><center>[[ingredient.9]]</center></td>
+          <td id="td2">21</td>
+          <td id="td3"><paper-input prevent-invalid-input placeholder="0" id="paper" type="number" value="{{aantal-Tomaat}}"></paper-input></td>
+          <td id="td4"><button id="but">Toevoegen</td>
         </tr>
       </table>
 
