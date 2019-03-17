@@ -100,7 +100,6 @@ class OntvangenIngredienten extends PolymerElement {
           height: 3em;
           background-color: #9E9E9E;
         }
-
       </style>
 
       <table id="tabel">
