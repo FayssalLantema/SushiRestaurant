@@ -16,6 +16,7 @@ class OntvangenIngredienten extends PolymerElement {
         #tabel{
           border: 2px solid black;
           border-collapse: collapse;
+          margin
         }
 
         #pH{
@@ -100,13 +101,12 @@ class OntvangenIngredienten extends PolymerElement {
           <tr id="trE">
             <td id="td1"><center>[[item.naam]]</center></td>
             <td id="td2">{{item.aantal}}</td>
-            <td id="td3"><paper-input prevent-invalid-input placeholder="0" value="{{aantalVoorraad}}" type="number"></paper-input></td>
+            <td id="td3"><paper-input prevent-invalid-input placeholder="0" value="{{item.voorraad}}" type="number"></paper-input></td>
             <td id="td4"><button  on-click="bevestigen" id="but0">Toevoegen</button></td>
             <td id="td5"><button id="but1">Annuleren</button></td>
           </tr>
         </template>
       </table>
-
 
       <!-- <table id="tabel">
         <tr id="trH">
@@ -183,22 +183,23 @@ class OntvangenIngredienten extends PolymerElement {
       aantalTomaat: String,
       ingredient: {
         type: Array,
-        value: [{ naam : "Zalm", aantal : 35},
-                { naam : "Tonijn", aantal : 20},
-                { naam : "Kip", aantal : 15},
-                { naam : "Krab", aantal : 10},
-                { naam : "Komkommer", aantal : 35},
-                { naam : "Wortel", aantal : 24},
-                { naam : "Ui", aantal : 23},
-                { naam : "Sla", aantal : 12},
-                { naam : "Zeewierbladen", aantal : 45},
-                { naam : "Tomaat", aantal : 21}]
-      }
+        value: [
+            { naam : "Zalm", aantal : 35, voorraad : 0},
+            { naam : "Tonijn", aantal : 20, voorraad : 0},
+            { naam : "Kip", aantal : 15, voorraad : 0},
+            { naam : "Krab", aantal : 10, voorraad : 0},
+            { naam : "Komkommer", aantal : 35, voorraad : 0},
+            { naam : "Wortel", aantal : 24, voorraad : 0},
+            { naam : "Ui", aantal : 23, voorraad : 0},
+            { naam : "Sla", aantal : 12, voorraad : 0},
+            { naam : "Zeewierbladen", aantal : 45, voorraad : 0},
+            { naam : "Tomaat", aantal : 21, voorraad : 0}
+          ]
+      },
     };
   }
 
   bevestigen() {
-    console.log(aantalVoorraad);
   }
 }
 
